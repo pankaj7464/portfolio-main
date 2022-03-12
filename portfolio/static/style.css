@@ -10,6 +10,9 @@
 html{
     scroll-behavior: smooth;
 }
+.scroll-overflow{
+    overflow: visible;
+}
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -34,6 +37,10 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+}
+.max-width .scroll-overflow{
+    max-height: 500px;
+    overflow: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -310,6 +317,7 @@ section .title::after{
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
+    
 }
 .skills .skills-content .left .text{
     font-size: 20px;
